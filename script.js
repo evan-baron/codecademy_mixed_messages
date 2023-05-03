@@ -2,8 +2,12 @@
 let curQuoteId = '';
 
 function generateQuote() {
-    let randomId = (Math.floor(Math.random() * 10) + 1);
-    console.log(randomId);
+    // let randomId = (Math.floor(Math.random() * 10) + 1);
+    // console.log(randomId);
+    let randomId = '';
+    do {
+        randomId = (Math.floor(Math.random() * 10) + 1);
+    } while (randomId == curQuoteId);
     
     document.getElementById('quote-container').style.display = 'block';
 
@@ -13,6 +17,7 @@ function generateQuote() {
         document.getElementById(curQuoteId).style.display = 'none';
     }
         // showing the new quote
+
     document.getElementById(randomId).style.display = 'block';
     curQuoteId = randomId;
 }
