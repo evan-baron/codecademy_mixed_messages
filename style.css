@@ -14,7 +14,7 @@ body {
     align-items: center;
     background-color: white;
     width: 30%;
-    height: 45%;
+    /* height: 45%; */
     margin: auto;
     padding: 1rem;
     border-radius: 10px;
@@ -22,7 +22,7 @@ body {
 }
 
 .quote-container {
-    display: block;
+    display: none;
     text-align: center;
     overflow: hidden;
     border-radius: 10px;
@@ -31,4 +31,10 @@ body {
 
 .quote-box {
     /* display: none; */
+}
+
+#button {
+    width: 15rem;
+    height: 3rem;
+    font-size: large;
 }
