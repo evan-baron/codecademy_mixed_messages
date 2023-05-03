@@ -2,8 +2,6 @@
 let curQuoteId = '';
 
 function generateQuote() {
-    // let randomId = (Math.floor(Math.random() * 10) + 1);
-    // console.log(randomId);
     let randomId = '';
     do {
         randomId = (Math.floor(Math.random() * 10) + 1);
@@ -11,13 +9,12 @@ function generateQuote() {
     
     document.getElementById('quote-container').style.display = 'block';
 
-    // hide currently showing quote
+    // hide currently showing quote if there is one
     if (curQuoteId != '') {
         // there is a prior quote showing
         document.getElementById(curQuoteId).style.display = 'none';
     }
         // showing the new quote
-
     document.getElementById(randomId).style.display = 'block';
     curQuoteId = randomId;
 }
