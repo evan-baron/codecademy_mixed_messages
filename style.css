@@ -3,6 +3,7 @@ body {
     width: 100%;
     height: 100vh;
     background-color: aliceblue;
+    font-family: Calibri;
 }
 
 .container {
@@ -13,8 +14,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: white;
-    width: 30%;
-    /* height: 45%; */
+    width: 33%;
     margin: auto;
     padding: 1rem;
     border-radius: 10px;
@@ -23,14 +23,19 @@ body {
 
 #quote-container {
     display: none;
-    text-align: center;
+    text-align: left;
+    line-height: 3rem;
     overflow: hidden;
-    /* border-radius: 10px;
-    border: 1px solid black; */
 }
 
 .quote-box {
     display: none;
+    font-size: 2.5rem;
+}
+
+.author {
+    font-size: 2rem;
+    text-align: right;
 }
 
 #button {
